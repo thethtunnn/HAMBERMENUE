@@ -1,0 +1,82 @@
+body {
+    background-color: #343a40;
+    color: #20c997;
+}
+.container {
+    max-width: 1000px;
+    margin-top: 100px;
+    background-color: rgb(255, 89, 0);
+    position: relative;
+}
+
+.hamburgerMenuContainer{
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.hamburger{
+    width: 40px;
+    height: 4px;
+    background-color: #cdedf6;
+    margin: 5px 0px;
+    border-radius: 5px;
+    
+}
+
+.line1,
+.line2,
+.line3 ,
+.overlayMenu{
+    transition: all 0.8s ease ;
+
+
+
+}
+.hideLine2 {
+    opacity: 0;
+}
+
+.rotatePlus45Deg{
+    transform: rotate(45deg) translate(4px, 9px);
+
+}
+
+.rotateMinus45Deg{
+    transform: rotate(-45deg) translate(4px, -9px);
+
+}
+.overlayMenu{
+    width: 100vw;
+    height: 50vh;
+    background-color: #4720c9;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    font-size: 20px;
+}
+.showMenue{
+    opacity: 1;
+}
+
+li{
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+li:hover {
+    opacity: 0.8;
+    color: #ffff;
+}
+
+.moveLiTagUp{
+    transform: translateY(10px);
+}
